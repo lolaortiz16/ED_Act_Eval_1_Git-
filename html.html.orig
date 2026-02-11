@@ -213,6 +213,11 @@
         }
 
     // Rama "editar"
+<<<<<<< HEAD
+    function editSelected() {
+            
+    }
+=======
       
       function editSelected() {
         if (selectedId === null) {
@@ -227,11 +232,11 @@
           render();
           return;
         }
-            
 
         // Puedes editar usando el input si tiene texto; si no, usamos prompt
         const inputText = readInputTrimmed();
         let newText = inputText;
+        
         if (!newText) {
           newText = prompt("Nuevo texto para la tarea:", current.text);
           if (newText === null) {
@@ -252,6 +257,7 @@
         render();
       }
     
+>>>>>>> editar
 
     // =========================
     // Inicio
